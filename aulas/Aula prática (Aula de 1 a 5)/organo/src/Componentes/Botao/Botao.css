@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Mont-Serrat:"Montserrat", sans-serif;
+}
+
+.botao {
+    background-color: #6278F7;
+    font-family:var(--Mont-Serrat);
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 32px;
+    cursor: pointer;
+    margin: 32px 0 ;
+}
+
+.botao:hover {
+    color: #95FFD4;
+}   
