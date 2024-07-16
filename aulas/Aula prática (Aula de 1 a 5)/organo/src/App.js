@@ -3,6 +3,7 @@ import Banner from './Componentes/Banner';
 // import CampoTexto from './Componentes/CampoTexto';
 import Formulario from './Componentes/Formulario';
 import Time from './Componentes/Time';
+import Rodape from './Componentes/Rodape';
 
 function App() {
 
@@ -46,7 +47,7 @@ function App() {
   const [colaboradores, setColaboradores] = useState([]);
 
   const aoNovoColaboradorAdicionado = (colaborador) => {
-      console.log(colaborador)
+      debugger
       setColaboradores([...colaboradores, colaborador])
   }
 
@@ -56,8 +57,15 @@ function App() {
       <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={ colaborador => aoNovoColaboradorAdicionado(colaborador) }/>
 
 
-      {times.map(time => <Time key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria}/>)}
+      {times.map(time => <Time 
+        key={time.nome} 
+        nome={time.nome} 
+        corPrimaria={time.corPrimaria} 
+        corSecundaria={time.corSecundaria}
+        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+      />)}
       
+      <Rodape/>
     </div>
   );
 }

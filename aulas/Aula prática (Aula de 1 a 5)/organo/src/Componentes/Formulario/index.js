@@ -19,6 +19,12 @@ const Formulario = (props) => {
             imagem, 
             time
         })
+
+        /*Limpa o formulário após o submit*/
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setTime('')
     }
 
     return (
@@ -60,6 +66,9 @@ const Formulario = (props) => {
                     Criar Card
                 </Botao>
             </form>
+            <footer>
+                
+            </footer>
         </section>
     )
 }
