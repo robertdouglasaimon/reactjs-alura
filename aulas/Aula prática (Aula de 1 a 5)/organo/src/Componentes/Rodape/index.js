@@ -1,45 +1,40 @@
-import './Rodape.css'
-import fbLogo from './imagens/fb.png';
-import twLogo from './imagens/tw.png';
-import igLogo from './imagens/ig.png';
-import logo from './imagens/logo.png';
+import facebook from '../Rodape/imagens/fb.png'
+import twitter from '../Rodape/imagens/tw.png'
+import instagram from '../Rodape/imagens/ig.png'
+import logo from '../Rodape/imagens/logo.png'
+import './rodape.css'
+
 
 const Rodape = () => {
-    return (
-        <footer className='footer'>
-            <section>
-                <ul>
-                    <li>
-                        <a href='https://facebook.com' target='_blank' rel="noreferrer">
-                            <img src={fbLogo} alt='Facebook' />
-                        </a>
-                    </li>
-                    <li>
-                        <a href='https://twitter.com' target='_blank' rel="noreferrer">
-                            <img src={twLogo} alt='Twitter' />
-                        </a>
-                    </li>
-                    <li>
-                        <a href='https://instagram.com' target='_blank' rel="noreferrer">
-                            <img src={igLogo} alt='Instagram' />
-                        </a>
-                    </li>
-                </ul>
-            </section>
-
-            <section>
-                <img src={logo} alt='Logo' />
-            </section>
-            
-            <section>
-                <p>
-                    Desenvolvido por Alura.
-                </p>
-            </section>
-        </footer>
-    )
+    return (<footer className="footer">
+       <section>
+       <ul>
+            <li>
+                <a href="facebook.com" target="_blank">
+                    <img src={facebook} alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="twitter.com" target="_blank">
+                    <img src={twitter} alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="instagram.com" target="_blank">
+                    <img src={instagram} alt="" />
+                </a>
+            </li>
+        </ul>
+       </section>
+       <section>
+       <img src={logo} />
+       </section>
+       <section>
+        <p>
+            Desenvolvido por Alura.
+        </p>
+       </section>
+    </footer>)
 }
 
-export default Rodape;
-
-
+export default Rodape
