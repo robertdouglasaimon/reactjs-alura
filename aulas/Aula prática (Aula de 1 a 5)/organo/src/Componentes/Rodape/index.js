@@ -1,9 +1,8 @@
-import facebook from '../Rodape/imagens/fb.png'
 import twitter from '../Rodape/imagens/tw.png'
+import facebook from '../Rodape/imagens/fb.png'
 import instagram from '../Rodape/imagens/ig.png'
-import logo from '../Rodape/imagens/logo.png'
+import logorodape from '../Rodape/imagens/logo.png'
 import './rodape.css'
-
 
 const Rodape = () => {
     return (
@@ -28,7 +27,7 @@ const Rodape = () => {
         </ul>
        </section>
        <section>
-       <img src={logo} />
+       <img src={logorodape} alt="" />
        </section>
        <section>
         <p>
