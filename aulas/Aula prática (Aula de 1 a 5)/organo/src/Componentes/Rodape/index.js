@@ -31,7 +31,7 @@ const Rodape = () => {
        </section>
        <section>
         <p>
-            Desenvolvido por Alura.
+            Desenvolvido por <a href="https://github.com/robertdouglasaimon">Robert Douglas</a> para o curso React + JS da Alura.
         </p>
        </section>
     </footer>)
