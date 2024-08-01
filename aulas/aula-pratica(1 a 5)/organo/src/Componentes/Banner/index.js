@@ -1,4 +1,4 @@
-import './banner.css';
+import './banner.css'
 import FotoBanner from '../Rodape/imagens/banner.png'
 
 const Banner = (props) => {
