@@ -1,5 +1,6 @@
-import './banner.css'
-import FotoBanner from '../Rodape/imagens/banner.png'
+import './banner.css'; // Teste com o caminho absoluto
+
+import FotoBanner from '../Rodape/imagens/banner.png';
 
 const Banner = (props) => {
     return (
