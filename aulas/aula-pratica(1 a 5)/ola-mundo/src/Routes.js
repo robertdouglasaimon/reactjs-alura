@@ -4,7 +4,6 @@ import SobreMim from "./Componentes/SobreMim";
 import Menu from "./Componentes/Menu";
 
 
-
 function AppRoutes(props) {
   return (
     <BrowserRouter>
