@@ -2,6 +2,7 @@ import { BrowserRouter, Routes,  Route } from "react-router-dom"
 import Inicio from "./Componentes/Inicio";
 import SobreMim from "./Componentes/SobreMim";
 import Menu from "./Componentes/Menu";
+import Rodape from "./Componentes/Rodape";
 
 
 function AppRoutes(props) {
@@ -13,6 +14,7 @@ function AppRoutes(props) {
         <Route path='/sobremim' element={<SobreMim/>} />
         <Route path='*' element={<div>Página não encontrada.</div>} />
       </Routes>
+      <Rodape />
     </BrowserRouter>
   );
 }

@@ -1,11 +1,22 @@
 import Banner from '../Banner';
-import './Inicio.css'
+import styles from './Inicio.module.css'
+
+import posts from '../../assets/json/posts.json'
+import Post from '../Post';
 
 const Inicio = () => {
     return (
         <main>
             <Banner/>
-            <h1>Olá mundo!</h1>
+
+
+            <ul className={styles.posts}>
+                {posts.map((post) =>  (
+                    <li key={post.id}>
+                        <Post post={post}/>
+                    </li>
+                ))}
+            </ul>
         </main>
     )
 }
